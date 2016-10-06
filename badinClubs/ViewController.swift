@@ -12,7 +12,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     @IBOutlet weak var tableView: UITableView!
     
-    var clubs = ["Ambassador Program", "AMP", "Anthony Munoz Leadership Committee", "Badin Studio (art)", "Choir"]
+    var clubs = ["👫Ambassador Program", "🏆AMP Club", "🙇Anthony Munoz Leadership Committee", "🎨Badin Studio (art)", "🗣Choir", "📝Creative Writing Club", "🍽Culinary Club", "🇫🇷French Club", "📱INTERalliance", "🕵JSA", "🇪🇸Spanish Club", "🎉Spirit Club"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +31,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         cell.textLabel?.text = clubs [indexPath.row]
         return cell
     }
-    
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "moveSegue", sender: "w")
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
