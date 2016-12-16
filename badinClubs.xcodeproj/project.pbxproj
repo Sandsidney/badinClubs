@@ -12,6 +12,7 @@
 		BE14EAC91DA670DE0091772E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE14EAC71DA670DE0091772E /* Main.storyboard */; };
 		BE14EACB1DA670DE0091772E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE14EACA1DA670DE0091772E /* Assets.xcassets */; };
 		BE14EACE1DA670DE0091772E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE14EACC1DA670DE0091772E /* LaunchScreen.storyboard */; };
+		BEE0F0B21E0222C900D4F4BB /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE0F0B11E0222C900D4F4BB /* RegisterPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		BE14EACA1DA670DE0091772E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE14EACD1DA670DE0091772E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE14EACF1DA670DE0091772E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEE0F0B11E0222C900D4F4BB /* RegisterPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterPageViewController.swift; path = ../RegisterPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +41,7 @@
 			isa = PBXGroup;
 			children = (
 				BE14EAC21DA670DE0091772E /* badinClubs */,
+				BEE0F0B31E02232E00D4F4BB /* Supporting Files */,
 				BE14EAC11DA670DE0091772E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,6 +64,15 @@
 				BE14EACC1DA670DE0091772E /* LaunchScreen.storyboard */,
 				BE14EACF1DA670DE0091772E /* Info.plist */,
 			);
+			path = badinClubs;
+			sourceTree = "<group>";
+		};
+		BEE0F0B31E02232E00D4F4BB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BEE0F0B11E0222C900D4F4BB /* RegisterPageViewController.swift */,
+			);
+			name = "Supporting Files";
 			path = badinClubs;
 			sourceTree = "<group>";
 		};
@@ -136,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEE0F0B21E0222C900D4F4BB /* RegisterPageViewController.swift in Sources */,
 				BE14EAC61DA670DE0091772E /* ViewController.swift in Sources */,
 				BE14EAC41DA670DE0091772E /* AppDelegate.swift in Sources */,
 			);
@@ -299,6 +312,7 @@
 				BE14EAD41DA670DE0091772E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

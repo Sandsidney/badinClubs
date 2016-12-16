@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  badinClubs
 //
-//  Created by BHSRam9 on 10/6/16.
+//  Created by Sidney Sanders on 10/6/16.
 //  Copyright © 2016 BHSRam9. All rights reserved.
 //
 
@@ -21,6 +21,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         tableView.delegate=self
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        self.performSegue( withIdentifier: "loginView", sender: self)
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return clubs.count
     }
@@ -32,7 +36,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return cell
     }
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "moveSegue", sender: "w")
+        performSegue(withIdentifier: "moveSegue", sender: "A")
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
